@@ -26,12 +26,12 @@ def set_words(w, result):
             set_ = set.intersection(set_, w[s])  # getting set words from text
             s += 1
         if set_ == set():  # filtering results
-            result.append('Not set')
+            result.append('No set')
         else:
             result.append('Set: ')
             result.append(set_)
     else:
-        result.append('Error: Not Data')
+        result.append('Error: No data')
     return result
 
 
@@ -63,7 +63,7 @@ if __name__ == "__main__":
                     for i in st_w:
                         print(i, ':', st_w[i])
                 else:
-                    print('Error: Not Data')
+                    print('Error: No data')
 
                 """Getting date from text"""
                 print('---------- Getting Date From Text ----------')
@@ -75,8 +75,8 @@ if __name__ == "__main__":
                     for i in date:
                         print(i)
                 else:
-                    print('Not Date')
+                    print('No date')
             else:
-                print('Not Data')
+                print('No data')
         else:
-            print('Not Data')
+            print('No data')
